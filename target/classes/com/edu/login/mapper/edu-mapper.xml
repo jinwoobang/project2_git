@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.login.dto.EduBean">
+
+<insert id="insertMember" parameterType="bean">
+   INSERT INTO STUDJOIN VALUES(STUDJOIN_SEQ.NEXTVAL,#{id},
+   #{name},#{pw},#{email},#{address},#{hp},#{birth},#{pwq},#{pwa})
+   </insert>
+   
+   <select id="selectMember" resultType="bean">
+   SELECT * FROM STUDJOIN
+   </select>
+   
+   <select id="selectMemberInfo" parameterType="int" resultType="bean">
+   SELECT * FROM STUDJOIN
+   WHERE NO=#{VALUE}
+   </select>
+
+	<select id="idCheck" parameterType="java.lang.String" resultType="java.lang.String">
+	 SELECT PW FROM STUDJOIN WHERE ID=#{VALUE}
+	</select>
+
+	<select id="idCheck2" parameterType="java.lang.String" resultType="java.lang.String">
+	SELECT ID FROM STUDJOIN WHERE ID=#{VALUE}
+	</select>
+	
+	<delete id="deleteSpring" parameterType="java.lang.String">
+	DELETE FROM STUDJOIN WHERE ID=#{VALUE}
+	</delete>
+	
+	<!-- <select id="idfind" parameterType="java.util.HashMap" resultType="bean">
+	SELECT ID FROM STUDJOIN WHERE NAME=#{name} AND PWQ=#{pwq} AND PWA=#{pwa}
+	</select> -->
+	
+	<select id="idfind" parameterType="java.util.HashMap" resultType="java.lang.String">
+	SELECT ID FROM STUDJOIN WHERE NAME=#{name} AND PWQ=#{pwq} AND PWA=#{pwa}
+	</select>
+	
+	<select id="pwfind" parameterType="java.util.HashMap" resultType="java.lang.String">
+	SELECT PW FROM STUDJOIN WHERE ID=#{id} AND NAME=#{name} AND PWQ=#{pwq} AND PWA=#{pwa}
+	</select>
+	
+	<update id="pwmod" parameterType="java.lang.String">
+	UPDATE STUDJOIN SET PW=#{pw} WHERE NAME=#{name}
+	</update>
+	
+	<update id="pwmod2" parameterType="java.lang.String">
+	UPDATE STUDJOIN SET PW=#{pw} WHERE ID=#{id}
+	</update>
+	
+	<update id="infoModify" parameterType="bean">
+	UPDATE STUDJOIN SET NAME=#{name},BIRTH=#{birth},HP=#{hp},EMAIL=#{email},ADDRESS=#{address},
+	PWQ=#{pwq},PWA=#{pwa} WHERE ID=#{id}
+	</update>
+
+</mapper>

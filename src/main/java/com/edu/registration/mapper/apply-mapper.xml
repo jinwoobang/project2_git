@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.registration.dto.Apply">
+	<insert id="insertApply" parameterType="apply">
+		INSERT INTO APPLY
+		VALUES(0, null, 0, 0, null, #{week,jdbcType=VARCHAR}, #{time,jdbcType=VARCHAR})
+	</insert>
+
+	<select id="selectApply" resultType="apply">
+		SELECT * FROM APPLY
+	</select>
+
+
+</mapper>

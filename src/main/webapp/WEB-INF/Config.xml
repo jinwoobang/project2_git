@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration><!-- DB설정(Connection) -->
+   
+    <typeAliases>   
+      <typeAlias type="com.edu.board.dto.Notice" alias="notice"/>
+      <typeAlias type="com.edu.board.dto.Storage" alias="storage"/>
+      <typeAlias type="com.edu.board.dto.Review" alias="review"/>
+      <typeAlias type="com.edu.login.dto.EduBean" alias="bean"/>
+      <typeAlias type="com.edu.login.dto.EduTeaBean" alias="teabean"/>
+     <typeAlias type="com.edu.login.dto.EduAdminBean" alias="adminbean"/>
+      <typeAlias type="com.edu.mypage.dto.Counsel" alias="counsel"/>
+      <typeAlias type="com.edu.registration.dto.Apply" alias="apply"/>
+      <typeAlias type="com.edu.test.dto.TestBean" alias="test"/>
+    </typeAliases>  
+       
+    <mappers>
+       <mapper resource="com/edu/board/mapper/notice-mapper.xml"/>
+       <mapper resource="com/edu/board/mapper/storage-mapper.xml"/>
+       <mapper resource="com/edu/board/mapper/review-mapper.xml"/> 
+       <mapper resource="com/edu/login/mapper/edu-mapper.xml"/> 
+       <mapper resource="com/edu/login/mapper/edut-mapper.xml"/>
+       <mapper resource="com/edu/login/mapper/eduadmin-mapper.xml"/> 
+       <mapper resource="com/edu/mypage/mapper/counsel-mapper.xml"/> 
+       <mapper resource="com/edu/registration/mapper/apply-mapper.xml"/>
+       <mapper resource="com/edu/test/mapper/test-mapper.xml"/>
+    </mappers>
+</configuration>
+
+
+
+
+
+

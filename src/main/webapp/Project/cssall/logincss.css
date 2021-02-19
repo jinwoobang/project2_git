@@ -1,0 +1,660 @@
+body {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding-top: 80px;
+	padding-bottom: 40px;
+	font-family: "Nanum Gothic", arial, helvetica, sans-serif;
+	background-repeat: no-repeat;
+	background: linear-gradient(to bottom right, #0098ff00, #84b2d100);
+}
+
+.body1 {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding-bottom: 40px;
+	font-family: "Nanum Gothic", arial, helvetica, sans-serif;
+	background-repeat: no-repeat;
+	background: linear-gradient(to bottom right, #0098ff00, #84b2d100);
+}
+
+button {
+	cursor: pointer;
+	background-color: #5dafe2;
+}
+
+.card {
+	margin: 0 auto;
+	float: none;
+	margin-bottom: 75px;
+	box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0
+		rgba(0, 0, 0, 0.19);
+	margin-top: 69px;
+}
+
+.form-signin .form-control {
+	position: relative;
+	height: 56px;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+	width: 406px;
+	top: 35px;
+}
+
+#boxsize.card.align-middle {
+	width: 36rem;
+	height: 30rem;
+	background-color: white;
+	border-radius: 20px;
+}
+
+#st {
+	margin-right: -4px;
+	background-color: rgba(0, 0, 0, 0);
+	color: skyblue;
+	border: 0.1px solid skyblue;
+}
+
+#st:hover {
+	color: white;
+	background-color: skyblue;
+}
+
+#pr {
+	margin-left: -3px;
+}
+
+#but_group {
+	color: skyblue;
+}
+
+#idps.sr-only {
+	position: relative;
+	top: 1px;
+	font-size: 30px;
+	left: 75px;
+}
+
+#remem {
+	position: relative;
+	top: -4px;
+	font-size: 18px;
+	left: -183px;
+}
+
+#login-head.form-signin-heading {
+	position: relative;
+	font-size: 38px;
+	top: 62px;
+	text-align: center;
+}
+
+#passmod-head.form-signin-heading {
+	position: relative;
+	font-size: 34px;
+	top: 23px;
+	text-align: center;
+	right: 98px;
+}
+
+#uid.form-control {
+	position: relative;
+	left: 13%;
+	display: block;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.75);
+	width: 72%;
+	border-radius: 0.50em;
+	padding: 1.2em 1em;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	-moz-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+	-ms-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	font-size: 1em;
+	outline: none;
+	margin: 2px;
+	height: 37px;
+}
+
+#uidid.form-control {
+	position: relative;
+	left: -13px;
+	display: inline;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.75);
+	width: 53%;
+	border-radius: 0.50em;
+	padding: 1.2em 1em;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	-moz-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+	-ms-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	font-size: 1em;
+	outline: none;
+	margin: 2px;
+	height: 37px;
+	top: 30px;
+}
+
+#idmod.form-control {
+	position: relative;
+	left: -83px;
+	display: inline;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.75);
+	width: 44%;
+	border-radius: 0.50em;
+	padding: 1.2em 1em;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	-moz-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+	-ms-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	font-size: 1em;
+	outline: none;
+	margin: 2px;
+	height: 37px;
+	top: 30px;
+}
+
+#sid.form-control {
+	position: relative;
+	left: 26px;
+	display: inline;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.75);
+	width: 44%;
+	border-radius: 0.50em;
+	padding: 1.2em 1em;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	-moz-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+	-ms-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	font-size: 1em;
+	outline: none;
+	margin: 2px;
+	height: 37px;
+	top: 30px;
+}
+
+#idps1.sr-only {
+	position: relative;
+	top: 1px;
+	font-size: 30px;
+	left: 75px;
+	text-align: center;
+}
+
+.login-but {
+	position: relative;
+	top: 0px;
+	width: 30em;
+	height: 4.3em;
+	color: #fff;
+	background-color: #5dafe2;
+	border: none;
+	font-size: 14px;
+}
+
+.login-but:hover {
+	background-color: blue;
+}
+
+.login-menu {
+	position: relative;
+	top: 153px;
+}
+
+}
+.btn-success {
+	color: #fff;
+	background-color: #000000e6;
+	border-color: #4cae4c;
+}
+
+#idfind {
+	text-decoration: none;
+	position: relative;
+	bottom: 41px;
+}
+
+}
+#uid1.form-control {
+	position: relative;
+	left: 25%;
+	display: block;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.75);
+	width: 60%;
+	border-radius: 0.50em;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	-moz-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+	-ms-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	font-size: 1em;
+	outline: none;
+	margin: 8px;
+	top: 53px;
+}
+
+#uid1.form-control {
+	position: relative;
+	left: 24%;
+	display: block;
+	background: rgba(255, 255, 255, 0.75);
+	width: 70%;
+	border-radius: 0.50em;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	transition: all 0.35s ease-in-out;
+	font-size: 1em;
+	outline: none;
+	margin: -2px;
+	top: 53px;
+	height: 43px;
+}
+
+#mod.form-control {
+	height: 36px;
+	position: relative;
+	left: 33%;
+	display: block;
+	background: rgba(255, 255, 255, 0.75);
+	width: 53%;
+	border-radius: 0.50em;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	transition: all 0.35s ease-in-out;
+	font-size: 11px;
+	outline: none;
+	top: -28px;
+}
+
+#boxsize1.card.align-middle {
+	width: 35rem;
+	height: 27rem;
+	background-color: white;
+	border-radius: 20px;
+}
+
+#boxsize2.card.align-middle {
+	width: 35rem;
+	height: 32rem;
+	background-color: white;
+	border-radius: 20px;
+}
+
+#boxsize3.card.align-middle {
+	width: 35rem;
+	height: 80rem;
+	background-color: white;
+	border-radius: 20px;
+}
+
+#boxsize8.card.align-middle {
+	width: 35rem;
+	height: 72rem;
+	background-color: white;
+	border-radius: 20px;
+}
+
+#boxsize4.card.align-middle {
+	width: 49rem;
+	height: 74rem;
+	background-color: white;
+	border-radius: 20px;
+}
+
+#boxsize6.card1.align-middle {
+	width: 30rem;
+	height: 24rem;
+	background-color: white;
+	float: none;
+	border: 1px solid;
+}
+
+#boxsize10.card.align-middle {
+	width: 35rem;
+	height: 32rem;
+	background-color: white;
+	border-radius: 20px;
+}
+
+#title.labelname {
+	position: relative;
+	display: block;
+	text-align: left;
+	margin-bottom: 0.5em;
+	top: 92px;
+	left: 40px;
+	font-size: 20px;
+}
+
+
+#modtitle.labelname {
+	position: relative;
+	display: block;
+	text-align: left;
+	margin-bottom: 0.5em;
+	top: 9px;
+	left: 25px;
+	font-size: 17px;
+}
+
+.idlogin-but {
+	position: relative;
+	top: -30px;
+	width: 8em;
+	height: 3.6em;
+	color: #fff;
+	background-color: #000000e6;
+	border: none;
+	font-size: 14px;
+}
+
+#btn-Yes1.idlogin-but {
+	position: relative;
+	top: 59px;
+	width: 8em;
+	height: 3em;
+	color: #fff;
+	background-color: #5dafe2;
+	border: none;
+	font-size: 14px;
+}
+
+#btn-Yes2.idlogin-but {
+	position: relative;
+	top: 59px;
+	width: 8em;
+	height: 3em;
+	color: #fff;
+	background-color: #5dafe2;
+	border: none;
+	font-size: 14px;
+}
+
+#btn-mod.idlogin-but {
+	position: relative;
+	top: -30px;
+	width: 5em;
+	height: 2em;
+	color: #fff;
+	background-color: #000000e6;
+	border: none;
+	font-size: 14px;
+	left: 192px;
+}
+
+#btn-join.join-but {
+	position: relative;
+	top: 68px;
+	width: 7em;
+	height: 2.3em;
+	color: #fff;
+	background-color: #5dafe2;
+	border: none;
+	font-size: 19px;
+}
+
+#btn-modi.join-but {
+	position: relative;
+	top: 33px;
+	width: 6em;
+	height: 2em;
+	color: #fff;
+	background-color: #000000a3;
+	border: none;
+	font-size: 14px;
+	right: 158px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.btTab {
+	position: relative;
+	left: 2px;
+	top: 40px;
+	width: 19em;
+	height: 4.3em;
+	color: #fff;
+	font-size: 14px;
+	margin-left: -4px;
+	cursor: pointer;
+	border: none;
+}
+
+#btn-id1.btTab {
+	border: 1px solid #5dafe2;
+	color: black;
+	background-color: white;
+	cursor: default;
+}
+
+
+#btn-ps2.btTab {
+	border: 1px solid #5dafe2;
+	color: black;
+	background-color: white;
+	cursor: default;
+}
+
+#btn-ps2:hover {
+	cursor: default;
+	color: 000000e6;
+}
+
+#birth.form-control {
+	position: relative;
+	right: 5px;
+	display: inline;
+	display:;
+	border: 0;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.75);
+	width: 18%;
+	border-radius: 0.50em;
+	padding: 0px 8px;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	-moz-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+	-ms-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	font-size: 1em;
+	outline: none;
+	margin: 8px;
+	height: 37px;
+	top: 28px;
+}
+
+#birthtext {
+	position: relative;
+	left: -7px;
+	top: 30px;
+}
+
+#email.form-control {
+	position: relative;
+	right: 1px;
+	display: inline;
+	background: rgba(255, 255, 255, 0.75);
+	width: 33%;
+	border-radius: 0.50em;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	-moz-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+	-ms-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	font-size: 1em;
+	outline: none;
+	margin: 8px;
+	color: gray;
+	height: 37px;
+	top: 35.7px;
+}
+
+#add.form-control {
+	position: relative;
+	left: -15%;
+	display: inline;
+	background: rgba(255, 255, 255, 0.75);
+	width: 27%;
+	border-radius: 0.50em;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	-moz-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+	-ms-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	font-size: 1em;
+	outline: none;
+	margin: 8px;
+	color: gray;
+	height: 37px;
+	top: 32px;
+}
+
+#golbeang {
+	position: relative;
+	top: 35px;
+	left: 2px;
+}
+
+#btn-add.btn-add {
+	position: relative;
+	top: 33px;
+	width: 6em;
+	height: 2em;
+	color: #fff;
+	background-color: #000000a3;
+	border: none;
+	font-size: 14px;
+	right: 85px;
+}
+
+#btn-code.btn-code {
+	position: relative;
+	top: 31px;
+	width: 6em;
+	height: 2em;
+	color: #fff;
+	background-color: #000000a3;
+	border: none;
+	font-size: 14px;
+	right: -30px;
+}
+
+#idbtn-code.idbtn-code {
+	position: relative;
+	top: 31px;
+	width: 6em;
+	height: 2em;
+	color: #fff;
+	background-color: #000000e6;
+	border: none;
+	font-size: 14px;
+	right: 22px;
+}
+
+#idps.form-control {
+	position: relative;
+	left: 12%;
+	display: block;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.75);
+	width: 403px;
+	border-radius: 0.50em;
+	padding: 0px 8px;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	-moz-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+	-ms-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	font-size: 1em;
+	outline: none;
+	margin: 8px;
+	height: 37px;
+	top: 37px;
+}
+
+#btn-idps2{
+	    background-color: white;
+    color: black;
+    border: 1px solid #5dafe2;
+    cursor: default;
+}
+
+#notice {
+	color: red;
+	font-size: 10px;
+	position: relative;
+	bottom: -58px;
+	right: 55%;
+}
+
+#joinlist {
+	position: relative;
+	top: 39px;
+	left: 81px;
+}
+
+#joinlistad {
+	position: relative;
+	top: 57px;
+	left: 83px;
+}
+
+#joinlistem {
+	position: relative;
+	top: 48px;
+	left: 81px;
+}
+
+#idbtn-code.btn-code {
+	position: relative;
+	top: 31px;
+	width: 6em;
+	height: 2em;
+	color: #fff;
+	background-color: #000000a3;
+	border: none;
+	font-size: 14px;
+	right: -2px;
+}
+
+#loginuid.form-control {
+	position: relative;
+	left: 9%;
+	display: block;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.75);
+	width: 72%;
+	border-radius: 0.50em;
+	padding: 0.2em 1em;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	-moz-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+	-ms-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	font-size: 1em;
+	outline: none;
+	margin: 2px;
+	height: 37px;
+}

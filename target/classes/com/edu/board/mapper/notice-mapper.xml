@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.board.dto.Notice">
+
+	<insert id="insertNotice" parameterType="notice">
+		INSERT INTO NOTICE
+		VALUES(STORAGE_SEQ.NEXTVAL, #{title},
+		#{contents}, SYSDATE, 0, #{adminNo})
+	</insert>
+
+	<select id="selectNotice" resultType="notice">
+		SELECT * FROM NOTICE
+	</select>
+
+	<select id="selectInfoNotice" parameterType="int"
+		resultType="notice">
+		SELECT * FROM NOTICE
+		WHERE NO=#{VALUE}
+	</select>
+
+	<update id="modifyNotice" parameterType="notice">
+		UPDATE NOTICE SET
+		TITLE=#{title}, CONTENTS=#{contents}
+	</update>
+
+	<update id="updateHitNotice" parameterType="int">
+		UPDATE NOTICE SET
+		HIT=HIT+1
+		WHERE NO=#{VALUE}
+	</update>
+	
+	<select id="searchNotice" resultType="notice">
+		SELECT * FROM NOTICE
+		<choose>
+			<when test="searchOption=='all'">
+				WHERE TITLE LIKE '%'||#{keyword}||'%'
+				OR CONTENTS LIKE '%'||#{keyword}||'%'
+			</when>
+			<otherwise>
+				WHERE ${searchOption} LIKE '%'||#{keyword}||'%'
+			</otherwise>
+		</choose>
+	</select>
+
+
+</mapper>

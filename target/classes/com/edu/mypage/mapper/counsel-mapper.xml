@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.mypage.dto.Counsel">
+
+
+	<insert id="insertCounsel" parameterType="counsel">
+		INSERT INTO ONEQ
+		VALUES(ONEQ_SEQ.NEXTVAL, #{title},
+		#{contents}, 0, 0, 0, 0, 0, SYSDATE,
+		0, null)
+	</insert>
+
+	<select id="selectCounsel" resultType="counsel">
+		SELECT * FROM ONEQ
+	</select>
+
+	<select id="selectInfoCounsel" parameterType="int"
+		resultType="counsel">
+		SELECT * FROM ONEQ
+		WHERE NO=#{VALUE}
+	</select>
+
+	<update id="modifyCounsel" parameterType="counsel">
+		UPDATE ONEQ SET
+		TITLE=#{title}, CONTENTS=#{contents}
+		WHERE NO=#{no}
+	</update>
+
+	<update id="updateHitCounsel" parameterType="int">
+		UPDATE ONEQ SET
+		HIT=HIT+1
+		WHERE NO=#{VALUE}
+	</update>
+
+	<delete id="deleteCounsel" parameterType="int">
+		DELETE FROM
+		ONEQ
+		WHERE NO=#{VALUE}
+	</delete>
+	
+
+
+</mapper>

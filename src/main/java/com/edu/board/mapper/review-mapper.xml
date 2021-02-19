@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.board.dto.Review">
+
+	<insert id="insertReview" parameterType="review">
+		INSERT INTO APPLYCOMMENT
+		VALUES(STORAGE_SEQ.NEXTVAL, #{title},
+		#{contents}, SYSDATE, 0, #{className}, null)
+	</insert>
+
+	<select id="selectReview" resultType="review">
+		SELECT * FROM APPLYCOMMENT
+	</select>
+
+	<select id="selectInfoReview" parameterType="int"
+		resultType="review">
+		SELECT * FROM APPLYCOMMENT
+		WHERE NO=#{VALUE}
+	</select>
+
+	<update id="modifyReview" parameterType="review">
+		UPDATE APPLYCOMMENT SET
+		TITLE=#{title}, CONTENTS=#{contents}
+	</update>
+
+	<update id="updateHitReview" parameterType="int">
+		UPDATE APPLYCOMMENT SET
+		HIT=HIT+1
+		WHERE NO=#{VALUE}
+	</update>
+	
+	<delete id="deleteReview" parameterType="int">
+		DELETE FROM
+		APPLYCOMMENT
+		WHERE NO=#{VALUE}
+	</delete>
+
+
+
+</mapper>

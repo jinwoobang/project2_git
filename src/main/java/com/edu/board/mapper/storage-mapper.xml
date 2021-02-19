@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.board.dto.Storage">
+
+	<insert id="insertStorage" parameterType="storage">
+		INSERT INTO STORAGE
+		VALUES(STORAGE_SEQ.NEXTVAL, #{title},
+		#{contents}, SYSDATE, 0,
+		#{fileName}, #{teaNo})
+	</insert>
+
+	<select id="selectStorage" resultType="storage">
+		SELECT * FROM STORAGE
+	</select>
+
+	<select id="selectInfoStorage" parameterType="int"
+		resultType="storage">
+		SELECT * FROM STORAGE
+		WHERE NO=#{VALUE}
+	</select>
+
+	<update id="modifyStorage" parameterType="storage">
+		UPDATE STORAGE SET
+		TITLE=#{title}, CONTENTS=#{contents}
+		WHERE NO=#{no}
+	</update>
+
+	<update id="updateHitStorage" parameterType="int">
+		UPDATE STORAGE SET
+		HIT=HIT+1
+		WHERE NO=#{VALUE}
+	</update>
+
+</mapper>
