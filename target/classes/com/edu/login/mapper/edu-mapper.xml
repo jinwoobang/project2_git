@@ -42,11 +42,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	SELECT PW FROM STUDJOIN WHERE ID=#{id} AND NAME=#{name} AND PWQ=#{pwq} AND PWA=#{pwa}
 	</select>
 	
-	<update id="pwmod" parameterType="java.lang.String">
+	<update id="pwmod" parameterType="bean">
 	UPDATE STUDJOIN SET PW=#{pw} WHERE NAME=#{name}
 	</update>
 	
-	<update id="pwmod2" parameterType="java.lang.String">
+	<update id="pwmod2" parameterType="bean">
 	UPDATE STUDJOIN SET PW=#{pw} WHERE ID=#{id}
 	</update>
 	
